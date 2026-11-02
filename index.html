@@ -5,6 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <!-- 1. Шрифты -->
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <!-- 2. Глобальные базовые стили -->
+    <link rel="stylesheet" href="./styles/global.css" />
+    <!-- 3. Ваш будущий код стилей -->
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Шапка сайта -->
+    <header class="header">
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item header__menu-item_active">
+            <a class="header__menu-link" href="#">Главная</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Посмотреть лоты</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Об аукционе</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__logo">
+        <img class="header__logo-image" src="./images/logo-black.svg" alt="Логотип Оно тебе надо" />
+      </a>
+      <address class="address header__address">
+        <p class="address__text">Вы находитесь в Саратове</p>
+      </address>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main">
+      <!-- Секция 1: Обложка (Cover) -->
+      <section class="cover">
+        <!-- Сюда пойдут h1, описание и кнопка -->
+      </section>
+
+      <!-- Секция 2: Карточки лотов (Lots) -->
+      <section class="lots">
+        <!-- Сюда пойдет список ul с тегами li -> a -> article -->
+      </section>
+
+      <!-- Секция 3: Описание аукциона (About) -->
+      <section class="about">
+        <!-- Сюда пойдут два контейнера для колонок текста -->
+      </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+      <!-- Сюда пойдут адрес, меню и ссылки на соцсети (vk, yt, pinterest) -->
+    </footer>
+  </body>
 </html>

@@ -1,1 +1,43 @@
 /* место для вашего кода */
+/* ==========================================================================
+   Шапка сайта (Header)
+   ========================================================================== */
+
+.header {
+  display: grid;
+  /* Делим шапку на 3 колонки: под меню, под логотип и под адрес */
+  grid-template-columns: 1fr auto 1fr;
+  /* Выравниваем элементы внутри ячеек по центру по вертикали */
+  align-items: center;
+  padding: 92px 24px 92px;
+}
+
+.header__menu-list {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.header__menu-link {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* Стили для активной ссылки меню (аккуратное подчёркивание, как в ТЗ) */
+.header__menu-item_active {
+  border-bottom: 1px solid currentColor;
+}
+
+.header__logo {
+  display: block;
+  /* Задаем фиксированную ширину логотипа, чтобы он не растягивался */
+  width: 148px;
+}
+
+.header__address {
+  /* Прижимаем адрес к правому краю его грид-ячейки */
+  justify-self: end;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.35;
+}
